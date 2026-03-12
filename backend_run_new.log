@@ -1,0 +1,3250 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.example:revhire >-------------------------
+[INFO] Building revhire 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.2:run (default-cli) > test-compile @ revhire >>>
+[INFO] 
+[INFO] --- jacoco:0.8.13:prepare-agent (default) @ revhire ---
+[INFO] argLine set to "-javaagent:C:\\Users\\Krishna kishore\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.13\\org.jacoco.agent-0.8.13-runtime.jar=destfile=C:\\Users\\Krishna kishore\\OneDrive\\Desktop\\REVHIRE_ANTIGRATIVITY\\PR2\\Backend\\target\\jacoco.exec,includes=org/example/revhire/**"
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ revhire ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ revhire ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ revhire ---
+[INFO] skip non existing resourceDirectory C:\Users\Krishna kishore\OneDrive\Desktop\REVHIRE_ANTIGRATIVITY\PR2\Backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ revhire ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.2.2:run (default-cli) < test-compile @ revhire <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.2:run (default-cli) @ revhire ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-03-08T15:48:05.161+05:30  INFO 14484 --- [RevHire] [           main] org.example.revhire.RevHireApplication   : Starting RevHireApplication using Java 21.0.10 with PID 14484 (C:\Users\Krishna kishore\OneDrive\Desktop\REVHIRE_ANTIGRATIVITY\PR2\Backend\target\classes started by Krishna kishore in C:\Users\Krishna kishore\OneDrive\Desktop\REVHIRE_ANTIGRATIVITY\PR2\Backend)
+2026-03-08T15:48:05.168+05:30  INFO 14484 --- [RevHire] [           main] org.example.revhire.RevHireApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-03-08T15:48:11.858+05:30  INFO 14484 --- [RevHire] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-08T15:48:12.531+05:30  INFO 14484 --- [RevHire] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 601 ms. Found 18 JPA repository interfaces.
+2026-03-08T15:48:19.525+05:30  INFO 14484 --- [RevHire] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-08T15:48:19.710+05:30  INFO 14484 --- [RevHire] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-08T15:48:19.711+05:30  INFO 14484 --- [RevHire] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-03-08T15:48:25.858+05:30  INFO 14484 --- [RevHire] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-08T15:48:25.862+05:30  INFO 14484 --- [RevHire] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 20418 ms
+2026-03-08T15:48:27.139+05:30  INFO 14484 --- [RevHire] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-08T15:48:27.521+05:30  INFO 14484 --- [RevHire] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-03-08T15:48:27.698+05:30  INFO 14484 --- [RevHire] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-08T15:48:29.291+05:30  INFO 14484 --- [RevHire] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-08T15:48:29.509+05:30  INFO 14484 --- [RevHire] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-08T15:48:35.897+05:30  INFO 14484 --- [RevHire] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9cb927e
+2026-03-08T15:48:35.909+05:30  INFO 14484 --- [RevHire] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-08T15:48:36.337+05:30  WARN 14484 --- [RevHire] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-08T15:48:42.323+05:30  INFO 14484 --- [RevHire] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-08T15:48:46.055+05:30  INFO 14484 --- [RevHire] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-08T15:48:48.106+05:30  INFO 14484 --- [RevHire] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-08T15:48:52.940+05:30  WARN 14484 --- [RevHire] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-08T15:48:55.625+05:30  INFO 14484 --- [RevHire] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-03-08T15:48:55.850+05:30  INFO 14484 --- [RevHire] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3dd7721b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e79c9e0, org.springframework.security.web.context.SecurityContextHolderFilter@5ce74a18, org.springframework.security.web.header.HeaderWriterFilter@555df150, org.springframework.web.filter.CorsFilter@7430d369, org.springframework.security.web.authentication.logout.LogoutFilter@220f319a, org.example.revhire.config.JwtAuthenticationFilter@7d412ab5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@342686f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@431f2a86, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65a90c60, org.springframework.security.web.session.SessionManagementFilter@45055c82, org.springframework.security.web.access.ExceptionTranslationFilter@6f3bd0e1, org.springframework.security.web.access.intercept.AuthorizationFilter@2fa69580]
+2026-03-08T15:48:58.189+05:30  INFO 14484 --- [RevHire] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-08T15:48:58.247+05:30  INFO 14484 --- [RevHire] [           main] org.example.revhire.RevHireApplication   : Started RevHireApplication in 55.515 seconds (process running for 58.425)
+2026-03-08T15:50:15.454+05:30  INFO 14484 --- [RevHire] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-08T15:50:15.911+05:30  INFO 14484 --- [RevHire] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-08T15:50:19.000+05:30  INFO 14484 --- [RevHire] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3057 ms
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.cover_letter,
+        a1_0.job_id,
+        a1_0.resume_file_id,
+        a1_0.seeker_id,
+        a1_0.status 
+    from
+        applications a1_0
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.cover_letter,
+        a1_0.job_id,
+        a1_0.resume_file_id,
+        a1_0.seeker_id,
+        a1_0.status 
+    from
+        applications a1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        resume_objective ro1_0
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        js1_0.user_id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.current_status,
+        js1_0.total_experience,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_seekers js1_0 
+    where
+        js1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        js1_0.user_id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.current_status,
+        js1_0.total_experience,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_seekers js1_0 
+    where
+        js1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        ro1_0.id,
+        ro1_0.created_at,
+        ro1_0.created_by,
+        ro1_0.objective,
+        ro1_0.updated_at,
+        ro1_0.updated_by,
+        ro1_0.user_id 
+    from
+        resume_objective ro1_0 
+    left join
+        users u1_0 
+            on u1_0.id=ro1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.cover_letter,
+        a1_0.job_id,
+        a1_0.resume_file_id,
+        a1_0.seeker_id,
+        a1_0.status 
+    from
+        applications a1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.cover_letter,
+        a1_0.job_id,
+        a1_0.resume_file_id,
+        a1_0.seeker_id,
+        a1_0.status 
+    from
+        applications a1_0 
+    left join
+        users s1_0 
+            on s1_0.id=a1_0.seeker_id 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        re1_0.id,
+        re1_0.cgpa,
+        re1_0.created_at,
+        re1_0.created_by,
+        re1_0.degree,
+        re1_0.institution,
+        re1_0.updated_at,
+        re1_0.updated_by,
+        re1_0.user_id,
+        re1_0.year 
+    from
+        resume_education re1_0 
+    left join
+        users u1_0 
+            on u1_0.id=re1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        re1_0.id,
+        re1_0.company,
+        re1_0.created_at,
+        re1_0.created_by,
+        re1_0.description,
+        re1_0.duration,
+        re1_0.job_title,
+        re1_0.updated_at,
+        re1_0.updated_by,
+        re1_0.user_id 
+    from
+        resume_experience re1_0 
+    left join
+        users u1_0 
+            on u1_0.id=re1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.id,
+        rs1_0.created_at,
+        rs1_0.created_by,
+        rs1_0.proficiency,
+        rs1_0.skill_name,
+        rs1_0.updated_at,
+        rs1_0.updated_by,
+        rs1_0.user_id 
+    from
+        resume_skills rs1_0 
+    left join
+        users u1_0 
+            on u1_0.id=rs1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.cover_letter,
+        a1_0.job_id,
+        a1_0.resume_file_id,
+        a1_0.seeker_id,
+        a1_0.status 
+    from
+        applications a1_0 
+    left join
+        users s1_0 
+            on s1_0.id=a1_0.seeker_id 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        rp1_0.id,
+        rp1_0.created_at,
+        rp1_0.created_by,
+        rp1_0.description,
+        rp1_0.link,
+        rp1_0.role,
+        rp1_0.technologies,
+        rp1_0.title,
+        rp1_0.updated_at,
+        rp1_0.updated_by,
+        rp1_0.user_id 
+    from
+        resume_projects rp1_0 
+    left join
+        users u1_0 
+            on u1_0.id=rp1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        applications a1_0
+Hibernate: 
+    select
+        rc1_0.id,
+        rc1_0.created_at,
+        rc1_0.created_by,
+        rc1_0.credential_url,
+        rc1_0.expiry_date,
+        rc1_0.issue_date,
+        rc1_0.issuing_organization,
+        rc1_0.name,
+        rc1_0.updated_at,
+        rc1_0.updated_by,
+        rc1_0.user_id 
+    from
+        resume_certifications rc1_0 
+    left join
+        users u1_0 
+            on u1_0.id=rc1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        rf1_0.id,
+        rf1_0.created_at,
+        rf1_0.created_by,
+        rf1_0.file_data,
+        rf1_0.file_name,
+        rf1_0.file_path,
+        rf1_0.file_type,
+        rf1_0.updated_at,
+        rf1_0.updated_by,
+        rf1_0.user_id 
+    from
+        resume_files rf1_0 
+    left join
+        users u1_0 
+            on u1_0.id=rf1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.cover_letter,
+        a1_0.job_id,
+        a1_0.resume_file_id,
+        a1_0.seeker_id,
+        a1_0.status 
+    from
+        applications a1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        ro1_0.id,
+        ro1_0.created_at,
+        ro1_0.created_by,
+        ro1_0.objective,
+        ro1_0.updated_at,
+        ro1_0.updated_by,
+        ro1_0.user_id 
+    from
+        resume_objective ro1_0 
+    left join
+        users u1_0 
+            on u1_0.id=ro1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        re1_0.id,
+        re1_0.cgpa,
+        re1_0.created_at,
+        re1_0.created_by,
+        re1_0.degree,
+        re1_0.institution,
+        re1_0.updated_at,
+        re1_0.updated_by,
+        re1_0.user_id,
+        re1_0.year 
+    from
+        resume_education re1_0 
+    left join
+        users u1_0 
+            on u1_0.id=re1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        re1_0.id,
+        re1_0.company,
+        re1_0.created_at,
+        re1_0.created_by,
+        re1_0.description,
+        re1_0.duration,
+        re1_0.job_title,
+        re1_0.updated_at,
+        re1_0.updated_by,
+        re1_0.user_id 
+    from
+        resume_experience re1_0 
+    left join
+        users u1_0 
+            on u1_0.id=re1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        rs1_0.id,
+        rs1_0.created_at,
+        rs1_0.created_by,
+        rs1_0.proficiency,
+        rs1_0.skill_name,
+        rs1_0.updated_at,
+        rs1_0.updated_by,
+        rs1_0.user_id 
+    from
+        resume_skills rs1_0 
+    left join
+        users u1_0 
+            on u1_0.id=rs1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        rp1_0.id,
+        rp1_0.created_at,
+        rp1_0.created_by,
+        rp1_0.description,
+        rp1_0.link,
+        rp1_0.role,
+        rp1_0.technologies,
+        rp1_0.title,
+        rp1_0.updated_at,
+        rp1_0.updated_by,
+        rp1_0.user_id 
+    from
+        resume_projects rp1_0 
+    left join
+        users u1_0 
+            on u1_0.id=rp1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        sj1_0.id,
+        sj1_0.created_at,
+        sj1_0.created_by,
+        sj1_0.job_id,
+        sj1_0.updated_at,
+        sj1_0.updated_by,
+        sj1_0.user_id 
+    from
+        saved_jobs sj1_0 
+    left join
+        users u1_0 
+            on u1_0.id=sj1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        rc1_0.id,
+        rc1_0.created_at,
+        rc1_0.created_by,
+        rc1_0.credential_url,
+        rc1_0.expiry_date,
+        rc1_0.issue_date,
+        rc1_0.issuing_organization,
+        rc1_0.name,
+        rc1_0.updated_at,
+        rc1_0.updated_by,
+        rc1_0.user_id 
+    from
+        resume_certifications rc1_0 
+    left join
+        users u1_0 
+            on u1_0.id=rc1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        rf1_0.id,
+        rf1_0.created_at,
+        rf1_0.created_by,
+        rf1_0.file_data,
+        rf1_0.file_name,
+        rf1_0.file_path,
+        rf1_0.file_type,
+        rf1_0.updated_at,
+        rf1_0.updated_by,
+        rf1_0.user_id 
+    from
+        resume_files rf1_0 
+    left join
+        users u1_0 
+            on u1_0.id=rf1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.cover_letter,
+        a1_0.job_id,
+        a1_0.resume_file_id,
+        a1_0.seeker_id,
+        a1_0.status 
+    from
+        applications a1_0
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.cover_letter,
+        a1_0.job_id,
+        a1_0.resume_file_id,
+        a1_0.seeker_id,
+        a1_0.status 
+    from
+        applications a1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        resume_objective ro1_0
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        j1_0.id,
+        j1_0.created_at,
+        j1_0.created_by,
+        j1_0.deadline,
+        j1_0.description,
+        j1_0.employer_id,
+        j1_0.experience_years,
+        j1_0.job_type,
+        j1_0.location,
+        j1_0.max_experience_years,
+        j1_0.openings,
+        j1_0.required_education_level,
+        j1_0.requirements,
+        j1_0.salary_max,
+        j1_0.salary_min,
+        j1_0.skills_required,
+        j1_0.status,
+        j1_0.title,
+        j1_0.updated_at,
+        j1_0.updated_by 
+    from
+        jobs j1_0 
+    where
+        j1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    insert 
+    into
+        job_views
+        (created_at, created_by, job_id, user_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        js1_0.job_id,
+        js1_0.id,
+        js1_0.created_at,
+        js1_0.created_by,
+        js1_0.skill,
+        js1_0.updated_at,
+        js1_0.updated_by 
+    from
+        job_skills js1_0 
+    where
+        js1_0.job_id=?
+Hibernate: 
+    select
+        jv1_0.job_id,
+        jv1_0.id,
+        jv1_0.created_at,
+        jv1_0.created_by,
+        jv1_0.updated_at,
+        jv1_0.updated_by,
+        jv1_0.user_id 
+    from
+        job_views jv1_0 
+    where
+        jv1_0.job_id=?
+Hibernate: 
+    select
+        e1_0.user_id,
+        e1_0.company_name,
+        e1_0.company_size,
+        e1_0.created_at,
+        e1_0.created_by,
+        e1_0.description,
+        e1_0.industry,
+        e1_0.location,
+        e1_0.updated_at,
+        e1_0.updated_by,
+        e1_0.website 
+    from
+        employers e1_0 
+    where
+        e1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.applied_at,
+        a1_0.cover_letter,
+        a1_0.job_id,
+        a1_0.resume_file_id,
+        a1_0.seeker_id,
+        a1_0.status 
+    from
+        applications a1_0 
+    left join
+        users s1_0 
+            on s1_0.id=a1_0.seeker_id 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.location,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.security_answer,
+        u1_0.security_question 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.created_by,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.type,
+        n1_0.updated_at,
+        n1_0.updated_by,
+        n1_0.user_id 
+    from
+        notifications n1_0 
+    left join
+        users u1_0 
+            on u1_0.id=n1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        n1_0.created_at desc
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  20:11 min
+[INFO] Finished at: 2026-03-08T16:06:51+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.2:run (default-cli) on project revhire: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
