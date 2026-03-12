@@ -13,8 +13,14 @@ import org.springframework.test.context.TestPropertySource;
         "spring.jpa.hibernate.ddl-auto=create-drop",
         "spring.mail.host=localhost",
         "spring.mail.port=25",
+        "spring.mail.username=test@test.com",
+        "spring.mail.password=testpassword",
+        "spring.mail.properties.mail.smtp.auth=false",
+        "spring.mail.properties.mail.smtp.starttls.enable=false",
         "jwt.secret=dGVzdFNlY3JldEtleUZvclRlc3RpbmdPbmx5MTIzNDU2Nzg=",
-        "jwt.expiration=86400000"
+        "jwt.expiration=86400000",
+        "app.otp.fallback-enabled=false",
+        "management.health.mail.enabled=false"
 })
 class RevHireApplicationTests {
 
