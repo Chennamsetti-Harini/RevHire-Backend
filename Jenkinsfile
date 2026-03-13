@@ -66,18 +66,19 @@ pipeline{
                             verbose: true,
                             transfers:[
                                 sshTransfer(
-                                    sourceFiles:"target/${JAR_NAME}",
-                                    removePrefix: "target/",
-                                    remoteDirectory:"/home/ec2-user",
-                                    flatten: true,
-                                    execTimeout: 120000,
-                                    execCommand: '''
-                                    bash -lc "pkill -f \\"revhire.jar\\" || true; \
-                                    sleep 2; \
-                                    nohup java -jar /home/ec2-user/revhire.jar --spring.profiles.active=prod > /home/ec2-user/application.log 2>&1 & \
-                                    echo DEPLOY_OK"
-                                    '''
+                                  sourceFiles: "target/${JAR_NAME}",
+                                  removePrefix: "target/",
+                                  remoteDirectory: "/home/ec2-user",
+                                  flatten: true,
+                                  usePty: true,             // ensure exit status is returned
+                                  execTimeout: 120000,
+                                  execCommand: '''
+                                bash -lc 'set -e; pkill -f "revhire.jar" || true; sleep 1; \
+                                nohup java -jar /home/ec2-user/revhire.jar --spring.profiles.active=prod > /home/ec2-user/application.log 2>&1 & \
+                                echo DEPLOY_OK; sleep 1; exit 0'
+                                '''
                                 )
+
                             ]
                         )
                     ]
