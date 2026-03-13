@@ -68,7 +68,7 @@ pipeline{
                                 sshTransfer(
                                     sourceFiles:"target/${JAR_NAME}",
                                     removePrefix: "target/",
-                                    remoteDirectory:"${REMOTE_DIR}",
+                                    remoteDirectory:"/home/ec2-user",
                                     flatten: true,
                                     execTimeout: 120000,
                                     execCommand:"""
