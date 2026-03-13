@@ -72,11 +72,11 @@ pipeline{
                                     flatten: true,
                                     execTimeout: 120000,
                                     execCommand:"""
-                                        pkill -f 'java -jar' || true
-                                        sleep 2
-                                        nohup java -jar /home/ec2-user/revhire.jar --spring.profiles.active=prod > /home/ec2-user/application.log 2>&1 &
-                                        disown
-                                        exit 0
+                                        pkill -f 'revhire.jar' || true
+                                          sleep 2
+                                          nohup java -jar /home/ec2-user/revhire.jar --spring.profiles.active=prod \
+                                            > /home/ec2-user/application.log 2>&1 &
+                                          exit 0
                                     """
                                 )
                             ]
